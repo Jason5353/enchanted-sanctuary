@@ -37,7 +37,7 @@ ul{margin:0;padding:0;list-style:none}
 .w:not(:last-child){margin-block-end:20px}
 .w-in{position:relative}
 .wd-auto{width:auto!important;max-width:100%}
-.wd-init{width:initial!important;max-width:100%}
+.wd-init{max-width:100%}
 .bg-video{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
 .bg-video iframe{position:absolute;top:50%;left:50%;width:100vw;height:56.25vw;min-width:177.78vh;min-height:100%;transform:translate(-50%,-50%);border:0}
 @media (min-width:1025px){.hide-d{display:none!important}}
@@ -125,9 +125,6 @@ ul{margin:0;padding:0;list-style:none}
 .site-header.stuck{position:fixed;box-shadow:0 2px 12px rgba(0,0,0,.08)}
 .logo{display:block}
 .logo img{display:block}
-.logo .logo-sticky{display:none}
-.stuck .logo .logo-main{display:none}
-.stuck .logo .logo-sticky{display:block}
 .main-nav>ul{display:flex;align-items:center}
 .main-nav li{position:relative}
 .main-nav>ul>li>a{display:block;font-family:Roboto,sans-serif;font-size:16px;font-weight:600;line-height:1.5em;text-transform:capitalize;color:var(--menu);padding:25px;border-radius:10px;transition:background .2s,color .2s}
@@ -209,3 +206,19 @@ ul{margin:0;padding:0;list-style:none}
 :where(.sec>.sec-in){position:relative}
 .nf{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px}
 .nf-h{font-family:Amita,serif;font-size:48px;margin:20px 0 10px}
+
+.w-map .w-in,.w-map .embed{width:100%}
+.w-svg .svg-w{text-align:center}
+.w-svg .svg-in svg{display:inline-block;max-width:100%;height:auto}
+
+/* hover effects: contact icons, WhatsApp button, social icons */
+.w-svg svg path,.w-svg svg g{transition:fill .3s,stroke .3s}
+.w-svg svg{transition:transform .35s cubic-bezier(.34,1.56,.64,1),filter .35s}
+.col-in:hover>.w-svg svg,.w-svg:hover svg{transform:translateY(-8px) scale(1.1) rotate(-4deg);filter:drop-shadow(0 10px 8px rgba(247,39,39,.25))}
+.col-in:hover>.w-svg svg [fill="#d1e7ff"],.col-in:hover>.w-svg svg [fill="#D1E7FF"],.w-svg:hover svg [fill="#d1e7ff"],.w-svg:hover svg [fill="#D1E7FF"]{fill:#ff8fb8}
+.col-in:hover>.w-svg svg [stroke="#231f20"],.col-in:hover>.w-svg svg [stroke="#0a132a"],.w-svg:hover svg [stroke="#231f20"],.w-svg:hover svg [stroke="#0a132a"]{stroke:#e0247a}
+.w-image a img{transition:transform .35s cubic-bezier(.34,1.56,.64,1),filter .35s}
+.w-image a:hover img{transform:translateY(-6px) scale(1.05);filter:drop-shadow(0 12px 12px rgba(37,211,102,.45)) saturate(1.25)}
+.social-icon{transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s,filter .3s}
+.social-icon:hover{transform:translateY(-6px) scale(1.12);box-shadow:0 10px 16px rgba(0,0,0,.25);filter:brightness(1.12) saturate(1.2)}
+@media(prefers-reduced-motion:reduce){.w-svg svg,.w-image a img,.social-icon{transition:none}.col-in:hover>.w-svg svg,.w-svg:hover svg,.w-image a:hover img,.social-icon:hover{transform:none}}
