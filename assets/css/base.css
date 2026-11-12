@@ -214,11 +214,14 @@ ul{margin:0;padding:0;list-style:none}
 /* hover effects: contact icons, WhatsApp button, social icons */
 .w-svg svg path,.w-svg svg g{transition:fill .3s,stroke .3s}
 .w-svg svg{transition:transform .35s cubic-bezier(.34,1.56,.64,1),filter .35s}
-.col-in:hover>.w-svg svg,.w-svg:hover svg{transform:translateY(-8px) scale(1.1) rotate(-4deg);filter:drop-shadow(0 10px 8px rgba(247,39,39,.25))}
+.col-in:hover>.w-svg svg,.w-svg:hover svg{transform:translateY(-4px) scale(1.05);filter:drop-shadow(0 6px 5px rgba(224,36,122,.22))}
 .col-in:hover>.w-svg svg [fill="#d1e7ff"],.col-in:hover>.w-svg svg [fill="#D1E7FF"],.w-svg:hover svg [fill="#d1e7ff"],.w-svg:hover svg [fill="#D1E7FF"]{fill:#ff8fb8}
 .col-in:hover>.w-svg svg [stroke="#231f20"],.col-in:hover>.w-svg svg [stroke="#0a132a"],.w-svg:hover svg [stroke="#231f20"],.w-svg:hover svg [stroke="#0a132a"]{stroke:#e0247a}
 .w-image a img{transition:transform .35s cubic-bezier(.34,1.56,.64,1),filter .35s}
-.w-image a:hover img{transform:translateY(-6px) scale(1.05);filter:drop-shadow(0 12px 12px rgba(37,211,102,.45)) saturate(1.25)}
+.w-image a:hover img{transform:translateY(-4px) scale(1.03);filter:drop-shadow(0 12px 12px rgba(37,211,102,.45)) saturate(1.25)}
 .social-icon{transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s,filter .3s}
 .social-icon:hover{transform:translateY(-6px) scale(1.12);box-shadow:0 10px 16px rgba(0,0,0,.25);filter:brightness(1.12) saturate(1.2)}
 @media(prefers-reduced-motion:reduce){.w-svg svg,.w-image a img,.social-icon{transition:none}.col-in:hover>.w-svg svg,.w-svg:hover svg,.w-image a:hover img,.social-icon:hover{transform:none}}
+
+.site-header .logo img{transition:width .3s,max-width .3s}
+.site-header.stuck .logo img{width:230px;max-width:230px;height:auto}
