@@ -29,7 +29,7 @@ ul{margin:0;padding:0;list-style:none}
 :where(.gap-ext>.col>.populated){padding:15px}
 :where(.gap-wide>.col>.populated){padding:20px}
 :where(.gap-wider>.col>.populated){padding:30px}
-:where(.v-mid>.sec-in>.col>.col-in){align-items:center;align-content:center}
+.v-mid>.sec-in>.col>.col-in{align-items:center;align-content:center}
 :where(.sec.min-h>.sec-in){min-height:400px}
 .bg-overlay{position:absolute;inset:0;pointer-events:none}
 :where(.col-in>*:not(.bg-overlay)){position:relative}
